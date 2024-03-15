@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_Lead>Bullet_410Bore_Lead_SB</Ammo_410Bore_Lead>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_Lead>Bullet_410Bore_Lead</Ammo_410Bore_Lead>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_Lead>Bullet_410Bore_Lead_SB</Ammo_410Bore_Lead>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+
+			<CombatExtended.AmmoSetDef>
+				<defName>AmmoSet_410Bore_BlackpowderCompatible</defName>
+				<label>.410 bore</label>
+				<ammoTypes>
+					<Ammo_410Bore_Buck>Bullet_410Bore_Buck</Ammo_410Bore_Buck>
+					<Ammo_410Bore_Lead>Bullet_410Bore_Lead</Ammo_410Bore_Lead>
+					<Ammo_410Bore_Slug>Bullet_410Bore_Slug</Ammo_410Bore_Slug>
+					<Ammo_410Bore_Beanbag>Bullet_410Bore_Beanbag</Ammo_410Bore_Beanbag>
+					<Ammo_410Bore_ElectroSlug>Bullet_410Bore_ElectroSlug</Ammo_410Bore_ElectroSlug>
+				</ammoTypes>
+				<similarTo>AmmoSet_Shotgun</similarTo>
+			</CombatExtended.AmmoSetDef>
+
+			<ThingDef Class="CombatExtended.AmmoDef" ParentName="410BoreBase">
+				<defName>Ammo_410Bore_Lead</defName>
+				<label>.410 Bore shell (Lead)</label>
+				<graphicData>
+					<texPath>Things/Ammo/Medieval/Blunderbuss/Paper</texPath>
+					<graphicClass>Graphic_StackCount</graphicClass>
+				</graphicData>
+				<statBases>
+					<MarketValue>0.06</MarketValue>
+				</statBases>
+				<tradeTags>
+					<li>CE_PreIndustrialAmmo</li>
+					<li>CE_AutoEnableCrafting_FueledSmithy</li>
+					<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+				</tradeTags>
+				<ammoClass>LeadShot</ammoClass>
+				<cookOffProjectile>Bullet_410Bore_Lead</cookOffProjectile>
+			</ThingDef>
+
+			<ThingDef ParentName="Base410BoreBullet">
+				<defName>Bullet_410Bore_Lead</defName>
+				<label>lead shot pellet</label>
+				<graphicData>
+					<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<speed>70</speed>
+					<damageAmountBase>4.5</damageAmountBase>
+					<pelletCount>12</pelletCount>
+					<armorPenetrationSharp>1</armorPenetrationSharp>
+					<armorPenetrationBlunt>2.24</armorPenetrationBlunt>
+					<spreadMult>17.8</spreadMult>
+					<casingMoteDefname>Fleck_ShotgunShell_Green</casingMoteDefname>
+					<casingFilthDefname>Filth_ShotgunAmmoCasings_Green</casingFilthDefname>
+				</projectile>
+			</ThingDef>
+
+			<ThingDef ParentName="Base410BoreBullet">
+				<defName>Bullet_410Bore_Lead_SB</defName>
+				<label>lead shot pellet</label>
+				<graphicData>
+					<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<speed>50</speed>
+					<damageAmountBase>3.5</damageAmountBase>
+					<pelletCount>12</pelletCount>
+					<armorPenetrationSharp>.7</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.17</armorPenetrationBlunt>
+					<spreadMult>35.6</spreadMult>
+					<casingMoteDefname>Fleck_ShotgunShell_Green</casingMoteDefname>
+					<casingFilthDefname>Filth_ShotgunAmmoCasings_Green</casingFilthDefname>
+				</projectile>
+			</ThingDef>
+
+			<RecipeDef ParentName="BlackpowderRecipeBase">
+				<defName>MakeAmmo_410Bore_Lead</defName>
+				<label>make .410 Bore (Lead) shell x500</label>
+				<description>Craft 500 .410 Bore (Lead) shells.</description>
+				<jobString>Making .410 Bore (Lead) shells.</jobString>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Steel</li>
+							</thingDefs>
+						</filter>
+						<count>30</count>
+					</li>
+				</ingredients>
+				<fixedIngredientFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				<products>
+					<Ammo_410Bore_Lead>500</Ammo_410Bore_Lead>
+				</products>
+				<workAmount>3000</workAmount>
+			</RecipeDef>
+		
+			<!-- Compat Patches Needed (in own modfile)
+				CE_Gun_HenrySideGate
+				CE_Gun_SWGovernor
+			 -->
+		</value>
+	</Operation>
+</Patch>

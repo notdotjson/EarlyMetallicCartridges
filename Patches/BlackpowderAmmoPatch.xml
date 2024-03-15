@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<CombatExtended.AmmoCategoryDef>
+				<defName>Blackpowder</defName>
+				<label>blackpowder</label>
+				<labelShort>BP</labelShort>
+				<description>An early metallic cartridge, filled with blackpowder and a simple lead projectile, leading to lower velocity and less accuracy.&#xD;&#xA;These are incompatible by design with autoloaders as they increase fouling immensely.</description>
+			</CombatExtended.AmmoCategoryDef>
+
+			<CombatExtended.AmmoCategoryDef>
+				<defName>LeadShot</defName>
+				<label>Lead Shot</label>
+				<labelShort>Lead</labelShort>
+				<description>An paper shell with a brass primer cup, filled with blackpowder and lead shot, leading to lower velocity and less accuracy.&#xD;&#xA;These are incompatible by design with autoloaders as they increase fouling immensely and jam up due to the primarily paper construction.</description>
+			</CombatExtended.AmmoCategoryDef>
+			
+			<RecipeDef Name="BlackpowderRecipeBase" ParentName="AmmoRecipeBase" Abstract="true">
+				<researchPrerequisite>EMC_EarlyMetallicCartridges</researchPrerequisite>
+			</RecipeDef>
+		</value>
+	</Operation>
+</Patch>

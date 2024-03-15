@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38LC_BP>Bullet_38LC_BP</Ammo_38LC_BP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38Special"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38LC_BP>Bullet_38LC_BP</Ammo_38LC_BP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef Class="CombatExtended.AmmoDef" ParentName="38SpecialBase">
+				<defName>Ammo_38LC_BP</defName>
+				<label>.38 Long Colt (BP)</label>
+				<graphicData>
+					<texPath>Things/Ammo/Pistol/BP</texPath>
+					<graphicClass>Graphic_StackCount</graphicClass>
+				</graphicData>
+				<statBases>
+					<MarketValue>0.03</MarketValue>
+				</statBases>
+				<tradeTags>
+					<li>CE_PreIndustrialAmmo</li>
+					<li>CE_AutoEnableCrafting_FueledSmithy</li>
+					<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+				</tradeTags>
+				<ammoClass>Blackpowder</ammoClass>
+				<cookOffProjectile>Bullet_38LC_BP</cookOffProjectile>
+			</ThingDef>
+			
+			<ThingDef ParentName="Base38SpecialBullet">
+				<defName>Bullet_38LC_BP</defName>
+				<label>.38 Long Colt bullet (BP)</label>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<damageAmountBase>9</damageAmountBase>
+					<armorPenetrationSharp>2</armorPenetrationSharp>
+					<armorPenetrationBlunt>6.94</armorPenetrationBlunt>
+					<spreadMult>1.30</spreadMult>
+					<speed>50</speed>
+				</projectile>
+			</ThingDef>
+			
+			<RecipeDef ParentName="BlackpowderRecipeBase">
+				<defName>MakeAmmo_38LC_BP</defName>
+				<label>make .38 Long Colt (BP) cartridge x500</label>
+				<description>Craft 500 .38 Long Colt (BP) cartridges.</description>
+				<jobString>Making .38 Long Colt (BP) cartridges.</jobString>
+				<ingredients>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Steel</li>
+							</thingDefs>
+						</filter>
+						<count>14</count>
+					</li>
+				</ingredients>
+				<fixedIngredientFilter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</fixedIngredientFilter>
+				<products>
+					<Ammo_38LC_BP>500</Ammo_38LC_BP>
+				</products>
+				<workAmount>1400</workAmount>
+			</RecipeDef>
+		</value>
+	</Operation>
+</Patch>
