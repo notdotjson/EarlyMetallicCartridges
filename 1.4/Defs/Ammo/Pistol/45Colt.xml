@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 45 Colt BP Item Def -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="45ColtBase">
+		<defName>Ammo_45Colt_BP</defName>
+		<label>.45 Colt (BP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/BP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.05</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_PreIndustrialAmmo</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<ammoClass>Blackpowder</ammoClass>
+		<cookOffProjectile>Bullet_45Colt_BP</cookOffProjectile>
+	</ThingDef>
+
+	<!-- 45 Colt BP Bullet Def -->
+	<ThingDef ParentName="Base45ColtBullet">
+		<defName>Bullet_45Colt_BP</defName>
+		<label>.45 Colt bullet (BP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>11.440</armorPenetrationBlunt>
+			<spreadMult>1.30</spreadMult>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- 45 Colt High Velocity BP Bullet Def -->
+	<ThingDef ParentName="Base45ColtBullet">
+		<defName>Bullet_45Colt_HV_BP</defName>
+		<label>.45 Colt bullet (BP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>26.58</armorPenetrationBlunt>
+			<spreadMult>1.15</spreadMult>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- 45 Colt BP Recipe Def -->
+	<RecipeDef ParentName="BlackpowderRecipeBase">
+		<defName>MakeAmmo_45Colt_BP</defName>
+		<label>make .45 Colt (BP) cartridge x500</label>
+		<description>Craft 500 .45 Colt (BP) cartridges.</description>
+		<jobString>Making .45 Colt (BP) cartridges.</jobString>
+		<workAmount>2400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_45Colt_BP>500</Ammo_45Colt_BP>
+		</products>
+	</RecipeDef>
+</Defs>

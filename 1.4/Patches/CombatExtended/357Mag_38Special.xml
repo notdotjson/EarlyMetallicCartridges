@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38LongColt_BP>Bullet_38LongColt_BP</Ammo_38LongColt_BP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38Special"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38LongColt_BP>Bullet_38LongColt_BP</Ammo_38LongColt_BP>
+		</value>
+	</Operation>
+</Patch>

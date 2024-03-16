@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- We can safely patch in 410 Blackpowder to 45Colt/410Bore firearms, as there are no autoloaders in this category -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_Lead>Bullet_410Bore_Lead</Ammo_410Bore_Lead>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_Lead>Bullet_410Bore_Lead_SB</Ammo_410Bore_Lead>
+		</value>
+	</Operation>
+
+	<!-- Compat Patches Needed (in own modfile)
+		CE_Gun_HenrySideGate
+		CE_Gun_SWGovernor
+	-->
+</Patch>

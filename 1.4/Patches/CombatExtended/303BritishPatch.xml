@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- Make the vanilla bolt action rifle compatible with 303 Blackpowder -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/comps/li[1]/ammoSet</xpath>
+		<value>
+			<ammoSet>AmmoSet_303British_BPCompat</ammoSet>
+		</value>
+	</Operation>
+</Patch>
