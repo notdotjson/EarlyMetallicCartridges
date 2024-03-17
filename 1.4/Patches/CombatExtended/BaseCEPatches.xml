@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- SHOTGUNS -->
+	<!-- .410 BORE -->
+
+	<!-- We can safely patch in 410 Blackpowder to 45Colt/410Bore firearms, as there are no autoloaders in this category -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_BP_Buck>Bullet_410Bore_BP_Buck</Ammo_410Bore_BP_Buck>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_BP_Buck>Bullet_410Bore_BP_Buck_SB</Ammo_410Bore_BP_Buck>
+		</value>
+	</Operation>
+
+	<!-- ditto with 45ACP/410 as this is revolver shotgun category -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45ACP410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_410Bore_BP_Buck>Bullet_410Bore_BP_Buck_SB</Ammo_410Bore_BP_Buck>
+		</value>
+	</Operation>
+
+	<!-- Compat Patches Needed (in own modfile)
+		CE_Gun_HenrySideGate
+		CE_Gun_SWGovernor
+	-->
+
+	<!-- 12 GAUGE -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/comps/li[1]/ammoSet</xpath>
+		<value>
+			<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+		</value>
+	</Operation>
+
+	<!-- PISTOL CALIBER -->
+
+	<!-- 44 RUSSIAN -->
+	<!-- 44 sw special compat 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44SWSpecial_FMJ>Bullet_44SWSpecial_FMJ</Ammo_44SWSpecial_FMJ>
+			<Ammo_44SWSpecial_AP>Bullet_44SWSpecial_AP</Ammo_44SWSpecial_AP>
+			<Ammo_44SWSpecial_HP>Bullet_44SWSpecial_HP</Ammo_44SWSpecial_HP>
+		</value>
+	</Operation>
+	
+	44 russian and 44 sw special compat 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_HV"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44SWSpecial_FMJ>Bullet_44SWSpecial_HV_FMJ</Ammo_44SWSpecial_FMJ>
+			<Ammo_44SWSpecial_AP>Bullet_44SWSpecial_HV_AP</Ammo_44SWSpecial_AP>
+			<Ammo_44SWSpecial_HP>Bullet_44SWSpecial_HV_HP</Ammo_44SWSpecial_HP>
+			<Ammo_44Russian_BP>Bullet_44Russian_HV_BP</Ammo_44Russian_BP>
+		</value>
+	</Operation> 
+	-->
+	
+	<!-- add 44 russian compat to appropriate firearms -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/CombatExtended.GunPatcherPresetDef[defName="Revolver"]/setCaliber</xpath>
+		<value>
+			<setCaliber>AmmoSet_44Magnum_BPCompat</setCaliber>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/CombatExtended.GunPatcherPresetDef[defName="Revolver"]/CaliberRanges/li[1]/AmmoSet</xpath>
+		<value>
+			<AmmoSet>AmmoSet_44Magnum_BPCompat</AmmoSet>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/comps/li[1]/ammoSet</xpath>
+		<value>
+			<ammoSet>AmmoSet_44Magnum_BPCompat</ammoSet>
+		</value>
+	</Operation>
+
+	<!-- 45 COLT -->
+	<!-- We can safely patch in 45 Colt BP to all applicable firearms, as there are no autoloaders in this category -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_BP>Bullet_45Colt_BP</Ammo_45Colt_BP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt_HV"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_BP>Bullet_45Colt_HV_BP</Ammo_45Colt_BP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_BP>Bullet_45Colt_HV_BP</Ammo_45Colt_BP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Colt_BP>Bullet_45Colt_BP</Ammo_45Colt_BP>
+		</value>
+	</Operation>
+
+	<!-- 45 SCHOFIELD -->
+	<!-- We can safely patch in 45 Schofield BP to all applicable firearms, as there are no autoloaders in this category -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Schofield"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45Schofield_BP>Bullet_45Schofield_BP</Ammo_45Schofield_BP>
+		</value>
+	</Operation>
+
+	<!-- .357 MAG / .38 SPC -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38LongColt_BP>Bullet_38LongColt_BP</Ammo_38LongColt_BP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38Special"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38LongColt_BP>Bullet_38LongColt_BP</Ammo_38LongColt_BP>
+		</value>
+	</Operation>
+
+	<!-- RIFLE -->
+
+	<!-- .303 BRITISH -->
+	<!-- Make the vanilla bolt action rifle compatible with 303 Blackpowder -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/comps/li[1]/ammoSet</xpath>
+		<value>
+			<ammoSet>AmmoSet_303British_BPCompat</ammoSet>
+		</value>
+	</Operation>
+</Patch>
