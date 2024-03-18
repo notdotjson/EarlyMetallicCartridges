@@ -10,7 +10,7 @@
 	<CombatExtended.AmmoCategoryDef>
 		<defName>BlackpowderBuckShot</defName>
 		<label>blackpowder buckshot</label>
-		<labelShort>Lead</labelShort>
-		<description>An paper shell with a brass primer cup, filled with blackpowder and lead shot, leading to lower velocity and less accuracy.&#xD;&#xA;These are incompatible by design with autoloaders as they increase fouling immensely and jam up due to the primarily paper construction.</description>
+		<labelShort>BP Buck</labelShort>
+		<description>A brass shotgun shell, filled with blackpowder and lead shot, leading to lower velocity and less accuracy.&#xD;&#xA;These are incompatible by design with autoloaders as they increase fouling immensely.</description>
 	</CombatExtended.AmmoCategoryDef>
-</Defs>
+</Defs>	

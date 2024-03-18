@@ -39,6 +39,15 @@
 		</value>
 	</Operation>
 
+	<!-- 23x75mmR -->
+	<!-- add support to all shotguns chambered in this round, as all are pump action only -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_23x75mmR"]/ammoTypes</xpath>
+		<value>
+			<Ammo_23x75mmR_BP_Buck>Bullet_23x75mmR_BP_Buck</Ammo_23x75mmR_BP_Buck>
+		</value>
+	</Operation>
+
 	<!-- PISTOL CALIBER -->
 
 	<!-- 44 RUSSIAN -->
@@ -148,6 +157,15 @@
 		<xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/comps/li[1]/ammoSet</xpath>
 		<value>
 			<ammoSet>AmmoSet_303British_BPCompat</ammoSet>
+		</value>
+	</Operation>
+
+	<!-- .45-70 GOVERNMENT -->
+	<!-- update .45-70 Government to use the BP round on all firearms -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_4570Gov"]/ammoTypes/Ammo_4570Gov_Incendiary</xpath>
+		<value>
+			<Ammo_4570Gov_BP>Bullet_4570Gov_BP</Ammo_4570Gov_BP>
 		</value>
 	</Operation>
 </Patch>

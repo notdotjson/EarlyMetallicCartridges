@@ -30,6 +30,7 @@
 	<!-- 44 Russian Item Def -->
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="44MagnumBase">
 		<defName>Ammo_44Russian_BP</defName>
+		<description>Ancient revolver cartridge which was later used in the smokeless powder era to develop 44 Magnum.</description>
 		<label>.44 Russian (BP)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Pistol/BP</texPath>
