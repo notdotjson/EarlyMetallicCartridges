@@ -23,11 +23,23 @@
 		<defName>Bullet_38LongColt_BP</defName>
 		<label>.38 Long Colt bullet (BP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>9</damageAmountBase>
+			<damageAmountBase>8</damageAmountBase>
 			<armorPenetrationSharp>2</armorPenetrationSharp>
 			<armorPenetrationBlunt>6.94</armorPenetrationBlunt>
 			<spreadMult>1.30</spreadMult>
 			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base38SpecialBullet">
+		<defName>Bullet_38LongColt_HV_BP</defName>
+		<label>.38 Long Colt bullet (BP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>13.84</armorPenetrationBlunt>
+			<spreadMult>1.15</spreadMult>
+			<speed>67</speed>
 		</projectile>
 	</ThingDef>
 	
