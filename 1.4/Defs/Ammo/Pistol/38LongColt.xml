@@ -43,7 +43,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<RecipeDef ParentName="BlackpowderRecipeBase">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_38LongColt_BP</defName>
 		<label>make .38 Long Colt (BP) cartridge x500</label>
 		<description>Craft 500 .38 Long Colt (BP) cartridges.</description>
