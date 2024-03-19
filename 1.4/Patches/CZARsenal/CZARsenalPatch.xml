@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName=""]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet></ammoSet>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+
+<!-- 
+	Guns to support		|	Caliber
+	- - - - - - - - - - - - - - -
+	Frolov Shotgun		|	32 Gauge
+	Gana-Krnka			|	20.32x95mmR
+	IZh-43				|	12 Gauge
+	IZh-94 Taiga		|	12 Gauge/30.06 (only support 12 atm)
+	MTs 20-01			|	20 Gauge
+	MTs255				|	20 Gauge
+	MTs255 Sawed-off	|	20 Gauge
+	MTs255-12			|	12 Gauge
+	Nagant M1895		|	7.62x38mmR
+	OTs-20 Gnom			|	12.5x40mm (BP and Buck BP)
+	TOZ-106				|	20 Gauge
+	TOZ-55 Shorty		|	9x53mmR/12 Gauge
+	TOZ-55				|	9x53mmR/12 Gauge
+	TOZ-81				|	.410 Bore
+	TP-82				|	32 Gauge/5.45 (only support 32G)
+-->
