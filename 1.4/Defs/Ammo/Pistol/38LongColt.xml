@@ -36,7 +36,7 @@
 		<label>.38 Long Colt bullet (BP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>11</damageAmountBase>
-			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationSharp>2.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>13.84</armorPenetrationBlunt>
 			<spreadMult>1.15</spreadMult>
 			<speed>67</speed>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationInsert" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_32Gauge"]/ammoTypes/Ammo_32Gauge_Beanbag</xpath>
+				<value>
+					<Ammo_32Gauge_BP_Buck>Bullet_32Gauge_BP_Buck</Ammo_32Gauge_BP_Buck>
+				</value>
+			</li>
+
+			<!-- support for the Toz81, revolving .410Bore shotgun -->
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_KripToz81a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_410Bore_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- support for the MTs255 series of shotguns (12 or 20Gauge) -->
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_KripMTs25512a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_KripMTs255b"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_20Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_KripMTs255Sawed"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_20Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- support for the MTs20, magazine fed variant of the MTs255 series (20Gauge) -->
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_Krip_MTs20a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_20Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_Krip_TOZ106a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_20Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- support for the IZh series of hunting guns (12 Gauge support only) -->
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_Krip_IZh43a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_KripIZh-94a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- only the base nagant revolver should be able to safely load BP -->
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_NagantM1895a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_762x38mmR_BP_Compat</ammoSet>
+				</value>
+			</li>
+
+			<!-- support for the TOZ55 series of combo hunting rifles (9x53mmR/12Gauge) -->
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55a"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_9x53mmR_BP_Compat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55a"]/comps/li[3]/propsUnderBarrel/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55Sawed"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_9x53mmR_SB_BP_Compat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55Sawed"]/comps/li[3]/propsUnderBarrel/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>
+
+<!-- 
+	Guns to support		|	Caliber
+	- - - - - - - - - - - - - - -
+	Gana-Krnka			|	20.32x95mmR
+	I have to make a whole new set of art for thisss...
+	it's gonna be a moment before i support this ammotype (highcal) ngl
+-->	

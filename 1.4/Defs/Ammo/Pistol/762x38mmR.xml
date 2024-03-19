@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_762x38mmR_BP_Compat</defName>
+		<label>7.62x38mmR</label>
+		<ammoTypes>
+			<Ammo_762x38mmR_FMJ>Bullet_762x38mmR_FMJ</Ammo_762x38mmR_FMJ>
+			<Ammo_762x38mmR_AP>Bullet_762x38mmR_AP</Ammo_762x38mmR_AP>
+			<Ammo_762x38mmR_HP>Bullet_762x38mmR_HP</Ammo_762x38mmR_HP>
+			<Ammo_762x38mmR_BP>Bullet_762x38mmR_BP</Ammo_762x38mmR_BP>
+		</ammoTypes>
+		<similarTo>AmmoSet_Pistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="762x38mmRBase">
+		<defName>Ammo_762x38mmR_BP</defName>
+		<label>7.62x38mmR (BP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/BP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.04</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_PreIndustrialAmmo</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<ammoClass>Blackpowder</ammoClass>
+		<cookOffProjectile>Bullet_762x38mmR_BP</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base762x38mmRBullet">
+		<defName>Bullet_762x38mmR_BP</defName>
+		<label>7.62mm pistol bullet (BP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>65</speed>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationSharp>1.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>6.74</armorPenetrationBlunt>
+			<spreadMult>1.30</spreadMult>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="BlackpowderRecipeBase">
+		<defName>MakeAmmo_762x38mmR_BP</defName>
+		<label>make 7.62x38mmR (BP) cartridge x500</label>
+		<description>Craft 500 7.62x38mmR (BP) cartridges.</description>
+		<jobString>Making 7.62x38mmR (BP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_762x38mmR_BP>500</Ammo_762x38mmR_BP>
+		</products>
+		<workAmount>1600</workAmount>
+	</RecipeDef>
+</Defs>

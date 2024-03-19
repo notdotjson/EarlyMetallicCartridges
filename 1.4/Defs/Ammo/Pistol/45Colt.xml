@@ -39,14 +39,14 @@
 		<label>.45 Colt bullet (BP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>14</damageAmountBase>
-			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationSharp>2.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>26.58</armorPenetrationBlunt>
 			<spreadMult>1.15</spreadMult>
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>
 
-	<!-- 45 Colt BP Recipe Def -->
+	<!-- 45 Colt BP Bullet Def -->
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_45Colt_BP</defName>
 		<label>make .45 Colt (BP) cartridge x500</label>
