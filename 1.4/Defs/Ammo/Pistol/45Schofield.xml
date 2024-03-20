@@ -9,10 +9,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.04</MarketValue>
+			<MarketValue>0.07</MarketValue>
 		</statBases>
 		<tradeTags>
-			<li>CE_PreIndustrialAmmo</li>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>
 			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
 		</tradeTags>
@@ -25,11 +24,11 @@
 		<defName>Bullet_45Schofield_BP</defName>
 		<label>.45 Schofield bullet (BP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationSharp>1.5</armorPenetrationSharp>
-			<armorPenetrationBlunt>7.26</armorPenetrationBlunt>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>5.42</armorPenetrationBlunt>
 			<spreadMult>1.30</spreadMult>
-			<speed>50</speed>
+			<speed>52</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -46,7 +45,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>16</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -57,6 +56,6 @@
 		<products>
 			<Ammo_45Schofield_BP>500</Ammo_45Schofield_BP>
 		</products>
-		<workAmount>2200</workAmount>
+		<workAmount>1600</workAmount>
 	</RecipeDef>
 </Defs>

@@ -20,10 +20,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.04</MarketValue>
+			<MarketValue>0.03</MarketValue>
 		</statBases>
 		<tradeTags>
-			<li>CE_PreIndustrialAmmo</li>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>
 			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
 		</tradeTags>
@@ -35,10 +34,10 @@
 		<defName>Bullet_762x38mmR_BP</defName>
 		<label>7.62mm pistol bullet (BP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>65</speed>
+			<speed>74</speed>
 			<damageAmountBase>8</damageAmountBase>
-			<armorPenetrationSharp>1.5</armorPenetrationSharp>
-			<armorPenetrationBlunt>6.74</armorPenetrationBlunt>
+			<armorPenetrationSharp>2.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>5.62</armorPenetrationBlunt>
 			<spreadMult>1.30</spreadMult>
 		</projectile>
 	</ThingDef>
@@ -55,7 +54,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>16</count>
+				<count>6</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -66,6 +65,6 @@
 		<products>
 			<Ammo_762x38mmR_BP>500</Ammo_762x38mmR_BP>
 		</products>
-		<workAmount>1600</workAmount>
+		<workAmount>600</workAmount>
 	</RecipeDef>
 </Defs>
