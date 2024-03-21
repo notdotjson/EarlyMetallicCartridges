@@ -4,23 +4,23 @@
 	<!-- .410 BORE -->
 
 	<!-- We can safely patch in 410 Blackpowder to 45Colt/410Bore firearms, as there are no autoloaders in this category -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes/Ammo_410Bore_Buck</xpath>
 		<value>
 			<Ammo_410Bore_BP_Buck>Bullet_410Bore_BP_Buck</Ammo_410Bore_BP_Buck>
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes/Ammo_410Bore_Buck</xpath>
 		<value>
 			<Ammo_410Bore_BP_Buck>Bullet_410Bore_BP_Buck_SB</Ammo_410Bore_BP_Buck>
 		</value>
 	</Operation>
 
 	<!-- ditto with 45ACP/410 as this is revolver shotgun category -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45ACP410Bore_SB"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45ACP410Bore_SB"]/ammoTypes/Ammo_410Bore_Buck</xpath>
 		<value>
 			<Ammo_410Bore_BP_Buck>Bullet_410Bore_BP_Buck_SB</Ammo_410Bore_BP_Buck>
 		</value>
@@ -41,8 +41,8 @@
 
 	<!-- 23x75mmR -->
 	<!-- add support to all shotguns chambered in this round, as all are pump action only -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_23x75mmR"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_23x75mmR"]/ammoTypes/Ammo_23x75mmR_Buck</xpath>
 		<value>
 			<Ammo_23x75mmR_BP_Buck>Bullet_23x75mmR_BP_Buck</Ammo_23x75mmR_BP_Buck>
 		</value>
@@ -97,29 +97,29 @@
 
 	<!-- 45 COLT -->
 	<!-- We can safely patch in 45 Colt BP to all applicable firearms, as there are no autoloaders in this category -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt"]/ammoTypes/Ammo_45Colt_FMJ</xpath>
 		<value>
 			<Ammo_45Colt_BP>Bullet_45Colt_BP</Ammo_45Colt_BP>
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt_HV"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt_HV"]/ammoTypes/Ammo_45Colt_FMJ</xpath>
 		<value>
 			<Ammo_45Colt_BP>Bullet_45Colt_HV_BP</Ammo_45Colt_BP>
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes/Ammo_45Colt_FMJ</xpath>
 		<value>
 			<Ammo_45Colt_BP>Bullet_45Colt_HV_BP</Ammo_45Colt_BP>
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes/Ammo_45Colt_FMJ</xpath>
 		<value>
 			<Ammo_45Colt_BP>Bullet_45Colt_BP</Ammo_45Colt_BP>
 		</value>
@@ -127,23 +127,23 @@
 
 	<!-- 45 SCHOFIELD -->
 	<!-- We can safely patch in 45 Schofield BP to all applicable firearms, as there are no autoloaders in this category -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Schofield"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Schofield"]/ammoTypes/Ammo_45Schofield_FMJ</xpath>
 		<value>
 			<Ammo_45Schofield_BP>Bullet_45Schofield_BP</Ammo_45Schofield_BP>
 		</value>
 	</Operation>
 
 	<!-- .357 MAG / .38 SPC -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver"]/ammoTypes/Ammo_38Special_FMJ</xpath>
 		<value>
 			<Ammo_38LongColt_BP>Bullet_38LongColt_BP</Ammo_38LongColt_BP>
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38Special"]/ammoTypes</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_38Special"]/ammoTypes/Ammo_38Special_FMJ</xpath>
 		<value>
 			<Ammo_38LongColt_BP>Bullet_38LongColt_BP</Ammo_38LongColt_BP>
 		</value>
@@ -163,7 +163,7 @@
 	<!-- .45-70 GOVERNMENT -->
 	<!-- update .45-70 Government to use the BP round on all firearms -->
 	<Operation Class="PatchOperationInsert">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_4570Gov"]/ammoTypes/Ammo_4570Gov_Incendiary</xpath>
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_4570Gov"]/ammoTypes/Ammo_4570Gov_FMJ</xpath>
 		<value>
 			<Ammo_4570Gov_BP>Bullet_4570Gov_BP</Ammo_4570Gov_BP>
 		</value>

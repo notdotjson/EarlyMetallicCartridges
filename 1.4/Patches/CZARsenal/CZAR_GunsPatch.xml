@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationInsert" MayRequire="CE.Kirp.RUGuns">
-				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_32Gauge"]/ammoTypes/Ammo_32Gauge_Beanbag</xpath>
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_32Gauge"]/ammoTypes/Ammo_32Gauge_Buck</xpath>
 				<value>
 					<Ammo_32Gauge_BP_Buck>Bullet_32Gauge_BP_Buck</Ammo_32Gauge_BP_Buck>
 				</value>

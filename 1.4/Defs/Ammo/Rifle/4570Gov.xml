@@ -8,10 +8,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.08</MarketValue>
+			<MarketValue>0.2</MarketValue>
 		</statBases>
 		<tradeTags>
-			<li>CE_PreIndustrialAmmo</li>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>
 			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
 		</tradeTags>
@@ -23,10 +22,10 @@
 		<defName>Bullet_4570Gov_BP</defName>
 		<label>.45-70 Government cartridge (BP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>110</speed>
+			<speed>93</speed>
 			<damageAmountBase>21</damageAmountBase>
-			<armorPenetrationSharp>3</armorPenetrationSharp>
-			<armorPenetrationBlunt>77.4</armorPenetrationBlunt>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>56.18</armorPenetrationBlunt>
 			<spreadMult>1.15</spreadMult>
 		</projectile>
 	</ThingDef>
@@ -43,7 +42,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>38</count>
+				<count>50</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -54,6 +53,6 @@
 		<products>
 			<Ammo_4570Gov_BP>500</Ammo_4570Gov_BP>
 		</products>
-		<workAmount>3800</workAmount>
+		<workAmount>5000</workAmount>
 	</RecipeDef>
 </Defs>

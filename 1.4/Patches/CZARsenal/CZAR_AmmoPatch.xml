@@ -11,10 +11,10 @@
 						<defName>AmmoSet_9x53mmR_BP_Compat</defName>
 						<label>9x53mmR</label>
 						<ammoTypes>
+							<Ammo_9x53mmR_BP>Bullet_9x53mmR_BP</Ammo_9x53mmR_BP>
 							<Ammo_9x53mmR_FMJ>Bullet_9x53mmR_FMJ</Ammo_9x53mmR_FMJ>
 							<Ammo_9x53mmR_AP>Bullet_9x53mmR_AP</Ammo_9x53mmR_AP>
 							<Ammo_9x53mmR_HP>Bullet_9x53mmR_HP</Ammo_9x53mmR_HP>
-							<Ammo_9x53mmR_BP>Bullet_9x53mmR_BP</Ammo_9x53mmR_BP>
 							<Ammo_9x53mmR_Incendiary>Bullet_9x53mmR_Incendiary</Ammo_9x53mmR_Incendiary>
 							<Ammo_9x53mmR_HE>Bullet_9x53mmR_HE</Ammo_9x53mmR_HE>
 							<Ammo_9x53mmR_Sabot>Bullet_9x53mmR_Sabot</Ammo_9x53mmR_Sabot>				
@@ -26,10 +26,10 @@
 						<defName>AmmoSet_9x53mmR_SB_BP_Compat</defName>
 						<label>9x53mmR</label>
 						<ammoTypes>
+							<Ammo_9x53mmR_BP>Bullet_9x53mmR_BP_SB</Ammo_9x53mmR_BP>
 							<Ammo_9x53mmR_FMJ>Bullet_9x53mmR_FMJ_SB</Ammo_9x53mmR_FMJ>
 							<Ammo_9x53mmR_AP>Bullet_9x53mmR_AP_SB</Ammo_9x53mmR_AP>
 							<Ammo_9x53mmR_HP>Bullet_9x53mmR_HP_SB</Ammo_9x53mmR_HP>
-							<Ammo_9x53mmR_BP>Bullet_9x53mmR_BP_SB</Ammo_9x53mmR_BP>
 							<Ammo_9x53mmR_Incendiary>Bullet_9x53mmR_Incendiary_SB</Ammo_9x53mmR_Incendiary>
 							<Ammo_9x53mmR_HE>Bullet_9x53mmR_HE_SB</Ammo_9x53mmR_HE>
 							<Ammo_9x53mmR_Sabot>Bullet_9x53mmR_Sabot_SB</Ammo_9x53mmR_Sabot>				

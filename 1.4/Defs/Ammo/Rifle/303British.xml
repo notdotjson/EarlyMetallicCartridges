@@ -6,10 +6,10 @@
 		<defName>AmmoSet_303British_BPCompat</defName>
 		<label>.303 British</label>
 		<ammoTypes>
+			<Ammo_303British_BP>Bullet_303British_BP</Ammo_303British_BP>
 			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
 			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
 			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
-			<Ammo_303British_BP>Bullet_303British_BP</Ammo_303British_BP>
 			<Ammo_303British_Incendiary>Bullet_303British_Incendiary</Ammo_303British_Incendiary>
 			<Ammo_303British_HE>Bullet_303British_HE</Ammo_303British_HE>
 			<Ammo_303British_Sabot>Bullet_303British_Sabot</Ammo_303British_Sabot>
@@ -25,10 +25,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.06</MarketValue>
+			<MarketValue>0.12</MarketValue>
 		</statBases>
 		<tradeTags>
-			<li>CE_PreIndustrialAmmo</li>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>
 			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
 		</tradeTags>
@@ -42,10 +41,10 @@
 		<label>.303 British bullet (BP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>17</damageAmountBase>
-			<armorPenetrationSharp>4</armorPenetrationSharp>
-			<armorPenetrationBlunt>67</armorPenetrationBlunt>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>43.6</armorPenetrationBlunt>
 			<spreadMult>1.15</spreadMult>
-			<speed>120</speed>
+			<speed>115</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -62,7 +61,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>28</count>
+				<count>30</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -73,7 +72,7 @@
 		<products>
 			<Ammo_303British_BP>500</Ammo_303British_BP>
 		</products>
-		<workAmount>2800</workAmount>
+		<workAmount>3000</workAmount>
 	</RecipeDef>
 
 </Defs>

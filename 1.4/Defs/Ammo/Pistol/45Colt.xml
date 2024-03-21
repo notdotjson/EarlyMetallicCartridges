@@ -9,7 +9,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.09</MarketValue>
+			<MarketValue>0.1</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>

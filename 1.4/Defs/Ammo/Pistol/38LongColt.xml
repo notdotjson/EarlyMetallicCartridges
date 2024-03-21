@@ -8,7 +8,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.04</MarketValue>
+			<MarketValue>0.06</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>
@@ -54,7 +54,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>14</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -65,6 +65,6 @@
 		<products>
 			<Ammo_38LongColt_BP>500</Ammo_38LongColt_BP>
 		</products>
-		<workAmount>1000</workAmount>
+		<workAmount>1400</workAmount>
 	</RecipeDef>
 </Defs>

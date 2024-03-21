@@ -37,7 +37,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.07</MarketValue>
+			<MarketValue>0.09</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>
@@ -86,7 +86,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>16</count>
+				<count>22</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -97,7 +97,7 @@
 		<products>
 			<Ammo_44Russian_BP>500</Ammo_44Russian_BP>
 		</products>
-		<workAmount>1600</workAmount>
+		<workAmount>2200</workAmount>
 	</RecipeDef>
 
 	<!-- added hv variant of 44 SW special 

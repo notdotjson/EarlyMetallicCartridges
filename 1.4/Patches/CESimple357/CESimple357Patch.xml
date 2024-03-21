@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd" MayRequire="al9000.357Simple">
-				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver_HV"]/ammoTypes</xpath>
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver_HV"]/ammoTypes/Ammo_38Special_FMJ</xpath>
 				<value>
 					<Ammo_38LongColt_BP>Bullet_38LongColt_HV_BP</Ammo_38LongColt_BP>
 				</value>

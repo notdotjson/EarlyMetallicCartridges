@@ -4,9 +4,9 @@
 		<defName>AmmoSet_20Gauge_BPCompat</defName>
 		<label>20 Gauge</label>
 		<ammoTypes>
+			<Ammo_20Gauge_BP_Buck>Bullet_20Gauge_BP_Buck</Ammo_20Gauge_BP_Buck>
 			<Ammo_20Gauge_Buck>Bullet_20Gauge_Buck</Ammo_20Gauge_Buck>
 			<Ammo_20Gauge_Slug>Bullet_20Gauge_Slug</Ammo_20Gauge_Slug>
-			<Ammo_20Gauge_BP_Buck>Bullet_20Gauge_BP_Buck</Ammo_20Gauge_BP_Buck>
 			<Ammo_20Gauge_Beanbag>Bullet_20Gauge_Beanbag</Ammo_20Gauge_Beanbag>
 			<Ammo_20Gauge_ElectroSlug>Bullet_20Gauge_ElectroSlug</Ammo_20Gauge_ElectroSlug>
 		</ammoTypes>
