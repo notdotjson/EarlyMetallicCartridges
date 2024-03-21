@@ -25,6 +25,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
+			<Mass>0.029</Mass>
 			<MarketValue>0.12</MarketValue>
 		</statBases>
 		<tradeTags>

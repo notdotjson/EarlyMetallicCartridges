@@ -21,7 +21,8 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.11</MarketValue>
+			<Mass>0.054</Mass>
+			<MarketValue>0.24</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableCrafting_FueledSmithy</li>
@@ -39,12 +40,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>70</speed>
+			<speed>78</speed>
 			<damageAmountBase>7</damageAmountBase>
 			<pelletCount>9</pelletCount>
-			<armorPenetrationSharp>3</armorPenetrationSharp>
-			<armorPenetrationBlunt>3.52</armorPenetrationBlunt>
-			<spreadMult>9.9</spreadMult>
+			<armorPenetrationSharp>3.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>3.8</armorPenetrationBlunt>
+			<spreadMult>9.4</spreadMult>
 			<casingMoteDefname>Fleck_ShotgunShell_Green</casingMoteDefname>
 			<casingFilthDefname>Filth_ShotgunAmmoCasings_Green</casingFilthDefname>
 		</projectile>
@@ -62,7 +63,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>24</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -73,6 +74,6 @@
 		<products>
 			<Ammo_12Gauge_BP_Buck>200</Ammo_12Gauge_BP_Buck>
 		</products>
-		<workAmount>2200</workAmount>
+		<workAmount>2400</workAmount>
 	</RecipeDef>
 </Defs>

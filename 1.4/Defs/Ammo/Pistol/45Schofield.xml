@@ -9,6 +9,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
+			<Mass>0.023</Mass>
 			<MarketValue>0.1</MarketValue>
 		</statBases>
 		<tradeTags>
