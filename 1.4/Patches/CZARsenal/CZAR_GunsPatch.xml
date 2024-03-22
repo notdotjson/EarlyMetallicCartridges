@@ -75,31 +75,34 @@
 			</li>
 
 			<!-- support for the TOZ55 series of combo hunting rifles (9x53mmR/12Gauge) -->
+			<!--
 			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
 				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55a"]/comps/li[1]/ammoSet</xpath>
 				<value>
 					<ammoSet>AmmoSet_9x53mmR_BP_Compat</ammoSet>
 				</value>
 			</li>
+			-->
 			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
 				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55a"]/comps/li[3]/propsUnderBarrel/ammoSet</xpath>
 				<value>
 					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
 				</value>
 			</li>
+			<!--
 			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
 				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55Sawed"]/comps/li[1]/ammoSet</xpath>
 				<value>
 					<ammoSet>AmmoSet_9x53mmR_SB_BP_Compat</ammoSet>
 				</value>
 			</li>
+			-->
 			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
 				<xpath>Defs/ThingDef[defName="CE_Gun_TOZ55Sawed"]/comps/li[3]/propsUnderBarrel/ammoSet</xpath>
 				<value>
 					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
 				</value>
 			</li>
-
 		</operations>
 	</Operation>
 </Patch>

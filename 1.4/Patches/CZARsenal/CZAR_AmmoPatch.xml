@@ -2,8 +2,10 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-
+			 
+			<!-- hard to find bp loading info for 9x53mmR sadly -->
 			<!-- we need to add support for the 9x53mmR, using BP stats -->
+				<!--
 			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
 				<xpath>Defs</xpath>
 				<value>
@@ -107,6 +109,7 @@
 					</RecipeDef>
 				</value>
 			</li>
+			-->
 
 			<!-- ditto, but with 32Gauge -->
 			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
@@ -120,10 +123,10 @@
 							<graphicClass>Graphic_StackCount</graphicClass>
 						</graphicData>
 						<statBases>
+							<Mass>0.024</Mass>
 							<MarketValue>0.1</MarketValue>
 						</statBases>
 						<tradeTags>
-							<li>CE_PreIndustrialAmmo</li>
 							<li>CE_AutoEnableCrafting_FueledSmithy</li>
 							<li>CE_AutoEnableCrafting_ElectricSmithy</li>
 						</tradeTags>
@@ -139,12 +142,11 @@
 							<graphicClass>Graphic_Single</graphicClass>
 						</graphicData>
 						<projectile Class="CombatExtended.ProjectilePropertiesCE">
-							<speed>67</speed>
 							<damageAmountBase>2</damageAmountBase>
 							<pelletCount>28</pelletCount>
 							<armorPenetrationSharp>1.2</armorPenetrationSharp>
-							<armorPenetrationBlunt>0.58</armorPenetrationBlunt>
-							<spreadMult>11.9</spreadMult>
+							<armorPenetrationBlunt>0.54</armorPenetrationBlunt>
+							<spreadMult>11.4</spreadMult>
 						</projectile>
 					</ThingDef>
 
@@ -160,7 +162,7 @@
 									<li>Steel</li>
 								</thingDefs>
 								</filter>
-								<count>8</count>
+								<count>9</count>
 							</li>
 						</ingredients>
 						<fixedIngredientFilter>
@@ -171,11 +173,10 @@
 						<products>
 							<Ammo_32Gauge_BP_Buck>200</Ammo_32Gauge_BP_Buck>
 						</products>
-						<workAmount>800</workAmount>
+						<workAmount>900</workAmount>
 					</RecipeDef>
 				</value>
 			</li>
-
 		</operations>
 	</Operation>
 </Patch>
