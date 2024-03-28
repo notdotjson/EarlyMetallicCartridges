@@ -16,5 +16,6 @@
 	</modDependencies>
 	<forceLoadAfter>
 		<li>CETeam.CombatExtended</li>
+		<li>kaitorisenkou.ModularWeapons</li>
 	</forceLoadAfter>
 </ModMetaData>
