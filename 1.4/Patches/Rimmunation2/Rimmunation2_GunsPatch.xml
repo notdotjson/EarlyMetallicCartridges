@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<!-- rifles -->
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_LeeEnfield_BoltAction"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_303British_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- revolvers -->
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_ColtPython_Revolver"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_MP412REX_Revolver"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+				</value>
+			</li>
+
+			<!-- shotguns -->
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_Remington870MCS_Shotgun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_Model1897_Shotgun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_IZh43_Shotgun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_Mossberg500_Shotgun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CP.RimmuNation.2.Weapons">
+				<xpath>Defs/ThingDef[defName="RNGun_StoegerCoachGun_Shotgun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>
