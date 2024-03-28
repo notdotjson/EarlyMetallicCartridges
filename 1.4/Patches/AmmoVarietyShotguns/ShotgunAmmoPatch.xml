@@ -50,6 +50,49 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgunBloat">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_12Gauge_BPCompat"]/ammoTypes</xpath>
+				<value>
+					<AVCE_Ammo_12Gauge_RockSalt>AVCE_Bullet_12Gauge_RockSalt</AVCE_Ammo_12Gauge_RockSalt>
+					<AVCE_Ammo_12Gauge_Bolo>AVCE_Bullet_12Gauge_Bolo</AVCE_Ammo_12Gauge_Bolo>
+					<AVCE_Ammo_12Gauge_Taser>AVCE_Bullet_12Gauge_Taser</AVCE_Ammo_12Gauge_Taser>
+					<AVCE_Ammo_12Gauge_Flare>AVCE_Bullet_12Gauge_Flare</AVCE_Ammo_12Gauge_Flare>
+					<AVCE_Ammo_12Gauge_Toxic MayRequire="Ludeon.RimWorld.Biotech">AVCE_Bullet_12Gauge_Toxic</AVCE_Ammo_12Gauge_Toxic>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgunBloat">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_20Gauge_BPCompat"]/ammoTypes</xpath>
+				<value>
+					<AVCE_Ammo_20Gauge_RockSalt>AVCE_Bullet_20Gauge_RockSalt</AVCE_Ammo_20Gauge_RockSalt>
+					<AVCE_Ammo_20Gauge_Bolo>AVCE_Bullet_20Gauge_Bolo</AVCE_Ammo_20Gauge_Bolo>
+					<AVCE_Ammo_20Gauge_Taser>AVCE_Bullet_20Gauge_Taser</AVCE_Ammo_20Gauge_Taser>
+					<AVCE_Ammo_20Gauge_Flare>AVCE_Bullet_20Gauge_Flare</AVCE_Ammo_20Gauge_Flare>
+					<AVCE_Ammo_20Gauge_Toxic MayRequire="Ludeon.RimWorld.Biotech">AVCE_Bullet_20Gauge_Toxic</AVCE_Ammo_20Gauge_Toxic>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgunBloat">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_410Bore_BPCompat"]/ammoTypes</xpath>
+				<value>
+					<AVCE_Ammo_410Bore_RockSalt>AVCE_Bullet_410Bore_RockSalt</AVCE_Ammo_410Bore_RockSalt>
+					<AVCE_Ammo_410Bore_Bolo>AVCE_Bullet_410Bore_Bolo</AVCE_Ammo_410Bore_Bolo>
+					<AVCE_Ammo_410Bore_Taser>AVCE_Bullet_410Bore_Taser</AVCE_Ammo_410Bore_Taser>
+					<AVCE_Ammo_410Bore_Flare>AVCE_Bullet_410Bore_Flare</AVCE_Ammo_410Bore_Flare>
+					<AVCE_Ammo_410Bore_Toxic MayRequire="Ludeon.RimWorld.Biotech">AVCE_Bullet_410Bore_Toxic</AVCE_Ammo_410Bore_Toxic>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgunBloat">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_410Bore_SB_BPCompat"]/ammoTypes</xpath>
+				<value>
+					<AVCE_Ammo_410Bore_RockSalt>AVCE_Bullet_410Bore_RockSalt</AVCE_Ammo_410Bore_RockSalt>
+					<AVCE_Ammo_410Bore_Bolo>AVCE_Bullet_410Bore_Bolo</AVCE_Ammo_410Bore_Bolo>
+					<AVCE_Ammo_410Bore_Taser>AVCE_Bullet_410Bore_Taser</AVCE_Ammo_410Bore_Taser>
+					<AVCE_Ammo_410Bore_Flare>AVCE_Bullet_410Bore_Flare</AVCE_Ammo_410Bore_Flare>
+					<AVCE_Ammo_410Bore_Toxic MayRequire="Ludeon.RimWorld.Biotech">AVCE_Bullet_410Bore_Toxic</AVCE_Ammo_410Bore_Toxic>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
