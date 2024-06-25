@@ -13,8 +13,7 @@
 			<MarketValue>0.1</MarketValue>
 		</statBases>
 		<tradeTags>
-			<li>CE_AutoEnableCrafting_FueledSmithy</li>
-			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+			<li>CE_AutoEnableCrafting_EMC_CastingTable</li>
 		</tradeTags>
 		<ammoClass>Blackpowder</ammoClass>
 		<cookOffProjectile>Bullet_45Colt_BP</cookOffProjectile>

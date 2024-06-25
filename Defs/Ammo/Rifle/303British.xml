@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- 303 Blackpowder Compatible Ammoset -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_303British_BPCompat</defName>
+		<label>.303 British</label>
+		<ammoTypes>
+			<Ammo_303British_BP>Bullet_303British_BP</Ammo_303British_BP>
+			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
+			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
+			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
+			<Ammo_303British_Incendiary>Bullet_303British_Incendiary</Ammo_303British_Incendiary>
+			<Ammo_303British_HE>Bullet_303British_HE</Ammo_303British_HE>
+			<Ammo_303British_Sabot>Bullet_303British_Sabot</Ammo_303British_Sabot>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- 303 Blackpowder Item Def -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="303BritishBase">
+		<defName>Ammo_303British_BP</defName>
+		<label>.303 British (BP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/BP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.029</Mass>
+			<MarketValue>0.12</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableCrafting_EMC_CastingTable</li>
+		</tradeTags>
+		<ammoClass>Blackpowder</ammoClass>
+		<cookOffProjectile>Bullet_303British_BP</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- 303 Blackpowder Projectile Def -->
+	<ThingDef ParentName="Base303BritishBullet">
+		<defName>Bullet_303British_BP</defName>
+		<label>.303 British bullet (BP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>43.6</armorPenetrationBlunt>
+			<spreadMult>1.15</spreadMult>
+			<speed>115</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- 303 Blackpowder Recipe Def -->
+	<RecipeDef ParentName="BlackpowderRecipeBase">
+		<defName>MakeAmmo_303British_BP</defName>
+		<label>make .303 British (BP) cartridge x500</label>
+		<description>Craft 500 .303 British (BP) cartridges.</description>
+		<jobString>Making .303 British (BP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_303British_BP>500</Ammo_303British_BP>
+		</products>
+		<workAmount>3000</workAmount>
+	</RecipeDef>
+
+</Defs>

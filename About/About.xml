@@ -5,6 +5,7 @@
 	<author>dotjson</author>
 	<description>Blackpowder metallic cartridges, for all your earlygame guns!</description>
 	<supportedVersions>
+		<li>1.5</li>
 		<li>1.4</li>
 	</supportedVersions>
 	<modDependencies>

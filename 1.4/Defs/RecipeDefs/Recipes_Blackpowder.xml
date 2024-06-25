@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Defs>
-	<RecipeDef Name="BlackpowderRecipeBase" ParentName="AmmoRecipeBase" Abstract="true">
-		<researchPrerequisite>EMC_EarlyMetallicCartridges</researchPrerequisite>
-	</RecipeDef>
-</Defs>
