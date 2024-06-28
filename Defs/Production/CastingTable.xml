@@ -84,4 +84,20 @@
 			<li>EMC_EarlyMetallicCartridges</li>
 		</researchPrerequisites>
 	</ThingDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsCastingTable</defName>
+		<label>cast ammo</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>60</priorityInType>
+		<fixedBillGiverDefs>
+			<li>EMC_CastingTable</li>
+		</fixedBillGiverDefs>
+		<verb>produce handcast ammo</verb>
+		<gerund>producing handcast ammo at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 </Defs>

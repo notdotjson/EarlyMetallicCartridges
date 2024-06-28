@@ -44,9 +44,9 @@
 
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_762x38mmR_BP</defName>
-		<label>make 7.62x38mmR (BP) cartridge x500</label>
-		<description>Craft 500 7.62x38mmR (BP) cartridges.</description>
-		<jobString>Making 7.62x38mmR (BP) cartridges.</jobString>
+		<label>make 7.62x38mmR (BP) cartridge x100</label>
+		<description>Cast and assemble 100 7.62x38mmR (BP) cartridges.</description>
+		<jobString>Casting and assembling 7.62x38mmR (BP) cartridges.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -54,7 +54,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>16</count>
+				<count>6</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -63,7 +63,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_762x38mmR_BP>500</Ammo_762x38mmR_BP>
+			<Ammo_762x38mmR_BP>100</Ammo_762x38mmR_BP>
 		</products>
 		<workAmount>1600</workAmount>
 	</RecipeDef>

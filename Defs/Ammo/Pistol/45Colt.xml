@@ -48,9 +48,9 @@
 	<!-- 45 Colt BP Bullet Def -->
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_45Colt_BP</defName>
-		<label>make .45 Colt (BP) cartridge x500</label>
-		<description>Craft 500 .45 Colt (BP) cartridges.</description>
-		<jobString>Making .45 Colt (BP) cartridges.</jobString>
+		<label>make .45 Colt (BP) cartridge x100</label>
+		<description>Cast and assemble 100 .45 Colt (BP) cartridges.</description>
+		<jobString>Casting and assembling .45 Colt (BP) cartridges.</jobString>
 		<workAmount>2400</workAmount>
 		<ingredients>
 			<li>
@@ -59,7 +59,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>24</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -68,7 +68,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_45Colt_BP>500</Ammo_45Colt_BP>
+			<Ammo_45Colt_BP>100</Ammo_45Colt_BP>
 		</products>
 	</RecipeDef>
 </Defs>

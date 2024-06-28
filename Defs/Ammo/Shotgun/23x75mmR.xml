@@ -39,9 +39,9 @@
 
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_23x75mmR_BP_Buck</defName>
-		<label>make 23x75mmR (BP Buck) shell x200</label>
-		<description>Craft 200 23x75mmR (BP Buck) shells.</description>
-		<jobString>Making 23x75mmR (BP Buck) shells.</jobString>
+		<label>make 23x75mmR (BP Buck) shell x40</label>
+		<description>Cast and assemble 40 23x75mmR (BP Buck) shells.</description>
+		<jobString>Casting and assembling 23x75mmR (BP Buck) shells.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -49,7 +49,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>40</count>
+				<count>16</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -58,7 +58,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_23x75mmR_BP_Buck>200</Ammo_23x75mmR_BP_Buck>
+			<Ammo_23x75mmR_BP_Buck>40</Ammo_23x75mmR_BP_Buck>
 		</products>
 		<workAmount>4000</workAmount>
 	</RecipeDef>

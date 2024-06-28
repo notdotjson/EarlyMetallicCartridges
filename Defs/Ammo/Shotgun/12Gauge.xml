@@ -52,9 +52,9 @@
 
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_12Gauge_BP_Buck</defName>
-		<label>make 12 gauge (BP Buck) shell x200</label>
-		<description>Craft 200 12 gauge (BP Buck) shells.</description>
-		<jobString>Making 12 gauge (BP Buck) shells.</jobString>
+		<label>make 12 gauge (BP Buck) shell x40</label>
+		<description>Cast and assemble 40 12 gauge (BP Buck) shells.</description>
+		<jobString>Casting and assembling 12 gauge (BP Buck) shells.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -62,7 +62,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>24</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -71,7 +71,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_12Gauge_BP_Buck>200</Ammo_12Gauge_BP_Buck>
+			<Ammo_12Gauge_BP_Buck>40</Ammo_12Gauge_BP_Buck>
 		</products>
 		<workAmount>2400</workAmount>
 	</RecipeDef>

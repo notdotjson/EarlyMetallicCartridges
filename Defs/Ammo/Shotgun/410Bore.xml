@@ -87,9 +87,9 @@
 
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_410Bore_BP_Buck</defName>
-		<label>make .410 Bore (BP Buck) shell x500</label>
-		<description>Craft 500 .410 Bore (BP Buck) shells.</description>
-		<jobString>Making .410 Bore (BP Buck) shells.</jobString>
+		<label>make .410 Bore (BP Buck) shell x100</label>
+		<description>Cast and assemble 100 .410 Bore (BP Buck) shells.</description>
+		<jobString>Casting and assembling .410 Bore (BP Buck) shells.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -97,7 +97,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>30</count>
+				<count>12</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -106,7 +106,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_410Bore_BP_Buck>500</Ammo_410Bore_BP_Buck>
+			<Ammo_410Bore_BP_Buck>100</Ammo_410Bore_BP_Buck>
 		</products>
 		<workAmount>3000</workAmount>
 	</RecipeDef>

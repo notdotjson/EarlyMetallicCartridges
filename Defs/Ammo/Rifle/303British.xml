@@ -51,9 +51,9 @@
 	<!-- 303 Blackpowder Recipe Def -->
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_303British_BP</defName>
-		<label>make .303 British (BP) cartridge x500</label>
-		<description>Craft 500 .303 British (BP) cartridges.</description>
-		<jobString>Making .303 British (BP) cartridges.</jobString>
+		<label>make .303 British (BP) cartridge x100</label>
+		<description>Cast and assemble 100 .303 British (BP) cartridges.</description>
+		<jobString>Casting and assembling .303 British (BP) cartridges.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -61,7 +61,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>30</count>
+				<count>12</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -70,7 +70,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_303British_BP>500</Ammo_303British_BP>
+			<Ammo_303British_BP>100</Ammo_303British_BP>
 		</products>
 		<workAmount>3000</workAmount>
 	</RecipeDef>

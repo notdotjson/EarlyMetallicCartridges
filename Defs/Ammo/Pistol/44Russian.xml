@@ -76,9 +76,9 @@
 	<!-- 44 Russian Recipe Def -->
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_44Russian_BP</defName>
-		<label>make .44 Russian (BP) cartridge x500</label>
-		<description>Craft 500 .44 Russian (BP) cartridges.</description>
-		<jobString>Making .44 Russian (BP) cartridges.</jobString>
+		<label>make .44 Russian (BP) cartridge x100</label>
+		<description>Cast and assemble 100 .44 Russian (BP) cartridges.</description>
+		<jobString>Casting and assembling .44 Russian (BP) cartridges.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -86,7 +86,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>9</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -95,7 +95,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_44Russian_BP>500</Ammo_44Russian_BP>
+			<Ammo_44Russian_BP>100</Ammo_44Russian_BP>
 		</products>
 		<workAmount>2200</workAmount>
 	</RecipeDef>

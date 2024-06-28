@@ -44,9 +44,9 @@
 	
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_38LongColt_BP</defName>
-		<label>make .38 Long Colt (BP) cartridge x500</label>
-		<description>Craft 500 .38 Long Colt (BP) cartridges.</description>
-		<jobString>Making .38 Long Colt (BP) cartridges.</jobString>
+		<label>make .38 Long Colt (BP) cartridge x100</label>
+		<description>Cast and assemble 100 .38 Long Colt (BP) cartridges.</description>
+		<jobString>Casting and assembling .38 Long Colt (BP) cartridges.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -54,7 +54,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>14</count>
+				<count>6</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -63,7 +63,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_38LongColt_BP>500</Ammo_38LongColt_BP>
+			<Ammo_38LongColt_BP>100</Ammo_38LongColt_BP>
 		</products>
 		<workAmount>1400</workAmount>
 	</RecipeDef>

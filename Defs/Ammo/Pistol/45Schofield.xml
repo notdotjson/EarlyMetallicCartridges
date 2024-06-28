@@ -35,9 +35,9 @@
 	<!-- 45 Schofield BP Recipe Def -->
 	<RecipeDef ParentName="BlackpowderRecipeBase">
 		<defName>MakeAmmo_45Schofield_BP</defName>
-		<label>make .45 Schofield (BP) cartridge x500</label>
-		<description>Craft 500 .45 Schofield (BP) cartridges.</description>
-		<jobString>Making .45 Schofield (BP) cartridges.</jobString>
+		<label>make .45 Schofield (BP) cartridge x100</label>
+		<description>Cast and assemble 100 .45 Schofield (BP) cartridges.</description>
+		<jobString>Casting and assembling .45 Schofield (BP) cartridges.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -45,7 +45,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>24</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -54,7 +54,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_45Schofield_BP>500</Ammo_45Schofield_BP>
+			<Ammo_45Schofield_BP>100</Ammo_45Schofield_BP>
 		</products>
 		<workAmount>2400</workAmount>
 	</RecipeDef>
