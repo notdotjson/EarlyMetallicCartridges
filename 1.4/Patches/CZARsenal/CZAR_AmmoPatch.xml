@@ -127,7 +127,8 @@
 							<MarketValue>0.1</MarketValue>
 						</statBases>
 						<tradeTags>
-							<li>CE_AutoEnableCrafting_EMC_CastingTable</li>
+							<li>CE_AutoEnableCrafting_FueledSmithy</li>
+							<li>CE_AutoEnableCrafting_ElectricSmithy</li>
 						</tradeTags>
 						<ammoClass>BlackpowderBuckShot</ammoClass>
 						<cookOffProjectile>Bullet_32Gauge_BP_Buck</cookOffProjectile>

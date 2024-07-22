@@ -3,7 +3,7 @@
 
 	<!-- ========================= Work tables ==========================-->
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="BenchBase" MayRequire="DotJson.AmmocraftOverhaul">
 		<defName>EMC_CastingTable</defName>
 		<label>casting table</label>
 		<description>A wood-fueled station for casting and assembling early cartridges in low quantities.</description>
@@ -85,7 +85,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<WorkGiverDef>
+	<WorkGiverDef MayRequire="DotJson.AmmocraftOverhaul">
 		<defName>DoBillsCastingTable</defName>
 		<label>cast ammo</label>
 		<giverClass>WorkGiver_DoBill</giverClass>

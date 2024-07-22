@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BPBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>
+				Generic blackpowder ammo base.
+				If you can see this text something has not gone right. 
+				Please contact the devs.
+			</description>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<ammoClass>Blackpowder</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BPPistolBase" ParentName="BPBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/BP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BPRifleBase" ParentName="BPBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/BP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BPBuckBase" ParentName="BPBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Ammo/Shotgun/BP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>BlackpowderBuckShot</ammoClass>
+	</ThingDef>
+</Defs>

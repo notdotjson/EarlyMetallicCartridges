@@ -28,10 +28,10 @@
 	</CombatExtended.AmmoSetDef>
 
 	<!-- 44 Russian Item Def -->
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="44MagnumBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BPBase">
 		<defName>Ammo_44Russian_BP</defName>
-		<description>Ancient revolver cartridge which was later used in the smokeless powder era to develop 44 Magnum.</description>
 		<label>.44 Russian (BP)</label>
+		<description>Pre-smokeless era blackpowder cartridge which was later used to develop the smokeless 44 Magnum cartridge.</description>
 		<graphicData>
 			<texPath>Things/Ammo/Pistol/BP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -40,10 +40,9 @@
 			<Mass>0.021</Mass>
 			<MarketValue>0.09</MarketValue>
 		</statBases>
-		<tradeTags>
-			<li>CE_AutoEnableCrafting_EMC_CastingTable</li>
-		</tradeTags>
-		<ammoClass>Blackpowder</ammoClass>
+		<thingCategories>
+			<li>Ammo44Magnum</li>
+		</thingCategories>
 		<cookOffProjectile>Bullet_44Russian_BP</cookOffProjectile>
 	</ThingDef>
 	

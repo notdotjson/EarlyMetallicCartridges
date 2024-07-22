@@ -12,21 +12,17 @@
 		<similarTo>AmmoSet_Pistol</similarTo>
 	</CombatExtended.AmmoSetDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="762x38mmRBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BPPistolBase">
 		<defName>Ammo_762x38mmR_BP</defName>
 		<label>7.62x38mmR (BP)</label>
-		<graphicData>
-			<texPath>Things/Ammo/Pistol/BP</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
+		<description>Pre-smokeless era blackpowder loading originally created for early Nagant M1895 revolvers.</description>
 		<statBases>
 			<Mass>0.013</Mass>
 			<MarketValue>0.07</MarketValue>
 		</statBases>
-		<tradeTags>
-			<li>CE_AutoEnableCrafting_EMC_CastingTable</li>
-		</tradeTags>
-		<ammoClass>Blackpowder</ammoClass>
+		<thingCategories>
+			<li>Ammo762x38mmR</li>
+		</thingCategories>
 		<cookOffProjectile>Bullet_762x38mmR_BP</cookOffProjectile>
 	</ThingDef>
 
