@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtendedGuns">
-				<xpath>Defs/ThingDef[defName="CE_Gun_WinchesterNintyFour"]/comps/li[1]/ammoSet</xpath>
-				<value>
-					<ammoSet>AmmoSet_44Magnum_HV_BPCompat</ammoSet>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationReplace" MayRequire="CETeam.CombatExtendedGuns">
+		<xpath>Defs/ThingDef[defName="CE_Gun_WinchesterNintyFour"]/comps/li[1]/ammoSet</xpath>
+		<value>
+			<ammoSet>AmmoSet_44Magnum_HV_BPCompat</ammoSet>
+		</value>
 	</Operation>
 </Patch>
