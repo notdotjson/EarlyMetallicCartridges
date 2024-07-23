@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-	<!-- update Henry Side Gate to use 410 BP -->
-	<Operation Class="PatchOperationReplace" MayRequire="CETeam.CombatExtendedArmory">
-		<xpath>Defs/ThingDef[defName="CE_Gun_HenrySideGate"]/comps/li[1]/ammoSet</xpath>
-		<value>
-			<ammoSet>AmmoSet_410Bore_BPCompat</ammoSet>
-		</value>
-	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- update Henry Side Gate to use 410 BP -->
+			<li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtendedArmory">
+				<xpath>Defs/ThingDef[defName="CE_Gun_HenrySideGate"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_410Bore_BPCompat</ammoSet>
+				</value>
+			</li>
 
-	<!-- update Sawed-off shotgun to use 12 Gauge BP -->
-	<Operation Class="PatchOperationReplace" MayRequire="CETeam.CombatExtendedArmory">
-		<xpath>Defs/ThingDef[defName="CE_Gun_SawedOff"]/comps/li[1]/ammoSet</xpath>
-		<value>
-			<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
-		</value>
+			<!-- update Sawed-off shotgun to use 12 Gauge BP -->
+			<li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtendedArmory">
+				<xpath>Defs/ThingDef[defName="CE_Gun_SawedOff"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 </Patch>
