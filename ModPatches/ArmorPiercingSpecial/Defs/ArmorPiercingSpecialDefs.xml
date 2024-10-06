@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base44RussianBullet">
+		<defName>Bullet_44Russian_HV_APS</defName>
+		<label>.44 Russian bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>22</armorPenetrationBlunt>
+			<speed>131</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base357MagnumBullet">
+		<defName>Bullet_357Magnum_HV_APS</defName>
+		<label>.357 Magnum bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationSharp>19</armorPenetrationSharp>
+			<armorPenetrationBlunt>44.46</armorPenetrationBlunt>
+			<speed>131</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base38SpecialBullet">
+		<defName>Bullet_38Special_HV_APS</defName>
+		<label>.38 Special bullet (AP-S)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>13</armorPenetrationSharp>
+			<armorPenetrationBlunt>17.99</armorPenetrationBlunt>
+			<speed>131</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

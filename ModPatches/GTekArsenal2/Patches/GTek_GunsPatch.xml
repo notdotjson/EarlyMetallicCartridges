@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- Combination Guns -->
+			<!-- Savage 42 Takedown -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_Savage42Takedown"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_22LR_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_Savage42Takedown"]/comps/li[3]/propsUnderBarrel/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_410Bore_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Shotguns -->
+			
+			<!-- Break Actions -->
+			<!-- Browning Side by Side -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_BrowningBSS"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<!-- Stoeger Coach Gun -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_StoegerCoachGun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<!-- Improvised Shotgun -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_Paliuntod"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Pump Actions -->
+			<!-- Mossberg Maverick 88 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_Maverick88Gun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Mossberg 590 Series -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_M590_ThunderRanch"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_M590A1Gun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_M590A1Retro"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_M590A1Short"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Remington M870 Series -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun_SawnOff"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun_Cantilever"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun_Tactical"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_RemingtonM870Gun_HomeDefense"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_TacOrdM870Gun_Operator"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Remington Tac-14 -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_RemingtonTac14Gun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Browning 10Gauge Series -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_BPS10Field"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_10Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_BPS10Field_SawnOff"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_10Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Specialty -->
+			<!-- Savage 220 XP-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_Savage220XP"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_20Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- REV410-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_REV410Sgun"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_410Bore_BPCompat</ammoSet>
+				</value>
+			</li>
+
+			<!-- Rifles -->
+			<!-- Winchester Ranger -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="HIDGun_WinchesterRanger"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_22LR_BPCompat</ammoSet>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- 22LR -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_22LR_BPCompat"]/ammoTypes</xpath>
+		<value>
+			<Ammo_22LR_APS>Bullet_22LR_APS</Ammo_22LR_APS>
+		</value>
+	</Operation>
+
+	<!-- 357MAG -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver"]/ammoTypes/Ammo_38Special_FMJ</xpath>
+		<value>
+			<Ammo_357Magnum_APS>Bullet_357Magnum_APS</Ammo_357Magnum_APS>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver"]/ammoTypes</xpath>
+		<value>
+			<Ammo_38Special_APS>Bullet_38Special_APS</Ammo_38Special_APS>
+		</value>
+	</Operation>
+
+	<!-- 38-->
+
+	<!-- 44MAG -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_BPCompat"]/ammoTypes/Ammo_44Russian_BP</xpath>
+		<value>
+			<Ammo_44Magnum_APS>Bullet_44Magnum_APS</Ammo_44Magnum_APS>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_HV_BPCompat"]/ammoTypes/Ammo_44Russian_BP</xpath>
+		<value>
+			<Ammo_44Magnum_APS>Bullet_44Magnum_HV_APS</Ammo_44Magnum_APS>
+		</value>
+	</Operation>
+
+	<!-- 7.62x38mmR-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x38mmR_BP_Compat"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x38mmR_APS>Bullet_762x38mmR_APS</Ammo_762x38mmR_APS>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- 357 MAG CZAR -->
+			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_BPCompat"]/ammoTypes</xpath>
+				<value>
+					<Ammo_44Russian_APS>Bullet_44Russian_APS</Ammo_44Russian_APS>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_HV_BPCompat"]/ammoTypes</xpath>
+				<value>
+					<Ammo_44Russian_APS>Bullet_44Russian_HV_APS</Ammo_44Russian_APS>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="Ammo_44Russian_APS"]/label</xpath>
+				<value>
+					<label>.44 Russian (AP-S)</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/ThingDef[defName="Ammo_44Russian_APS"]/ammoClass</xpath>
+				<value>
+					<ammoClass>SpecialAP</ammoClass>
+				</value>
+			</li>
+
+			<!-- 357 MAG / 38 SPC CZAR -->
+			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver_HV"]/ammoTypes</xpath>
+				<value>
+					<Ammo_38Special_APS>Bullet_38Special_HV_APS</Ammo_38Special_APS>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert" MayRequire="CE.Kirp.RUGuns">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_357Magnum_Revolver_HV"]/ammoTypes/Ammo_38LongColt_BP</xpath>
+				<value>
+					<Ammo_357Magnum_APS>Bullet_357Magnum_HV_APS</Ammo_357Magnum_APS>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

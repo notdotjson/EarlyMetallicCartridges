@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgun">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_12Gauge_BPCompat"]/ammoTypes</xpath>
 				<value>
 					<AVCE_Ammo_12Gauge_Bird>AVCE_Bullet_12Gauge_Bird</AVCE_Ammo_12Gauge_Bird>
@@ -14,7 +14,7 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgun">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_20Gauge_BPCompat"]/ammoTypes</xpath>
 				<value>
 					<AVCE_Ammo_20Gauge_Bird>AVCE_Bullet_20Gauge_Bird</AVCE_Ammo_20Gauge_Bird>
@@ -26,7 +26,7 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgun">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_410Bore_BPCompat"]/ammoTypes</xpath>
 				<value>
 					<AVCE_Ammo_410Bore_Bird_SB>AVCE_Bullet_410Bore_Bird_SB</AVCE_Ammo_410Bore_Bird_SB>
@@ -38,7 +38,7 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgun">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_410Bore_SB_BPCompat"]/ammoTypes</xpath>
 				<value>
 					<AVCE_Ammo_410Bore_Bird_SB>AVCE_Bullet_410Bore_Bird_SB</AVCE_Ammo_410Bore_Bird_SB>
@@ -49,6 +49,9 @@
 					<AVCE_Ammo_410Bore_Muzzlebang>AVCE_Bullet_410Bore_Muzzlebang</AVCE_Ammo_410Bore_Muzzlebang>
 				</value>
 			</li>
+
+			<!--
+			commenting out bloat support as it is still only 1.4
 
 			<li Class="PatchOperationAdd" MayRequire="Keshash.AmmoVarietyShotgunBloat">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_12Gauge_BPCompat"]/ammoTypes</xpath>
@@ -92,7 +95,7 @@
 					<AVCE_Ammo_410Bore_Flare>AVCE_Bullet_410Bore_Flare</AVCE_Ammo_410Bore_Flare>
 					<AVCE_Ammo_410Bore_Toxic MayRequire="Ludeon.RimWorld.Biotech">AVCE_Bullet_410Bore_Toxic</AVCE_Ammo_410Bore_Toxic>
 				</value>
-			</li>
+			</li> -->
 		</operations>
 	</Operation>
 </Patch>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_10Gauge_BPCompat</defName>
+		<label>10 Gauge</label>
+		<ammoTypes>
+			<Ammo_10Gauge_BP_Buck>Bullet_10Gauge_BP_Buck</Ammo_10Gauge_BP_Buck>
+			<Ammo_10Gauge_Buck>Bullet_10Gauge_Buck</Ammo_10Gauge_Buck>
+			<Ammo_10Gauge_Slug>Bullet_10Gauge_Slug</Ammo_10Gauge_Slug>
+			<Ammo_10Gauge_Beanbag>Bullet_10Gauge_Beanbag</Ammo_10Gauge_Beanbag>
+			<Ammo_10Gauge_ElectroSlug>Bullet_10Gauge_ElectroSlug</Ammo_10Gauge_ElectroSlug>
+		</ammoTypes>
+		<similarTo>AmmoSet_Shotgun</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BPBuckBase">
+		<defName>Ammo_10Gauge_BP_Buck</defName>
+		<label>10 gauge shell (BP Buck)</label>
+		<description>Transitional era blackpowder loading, used by those who could not afford better.</description>
+		<statBases>
+			<Mass>0.1</Mass>
+			<Bulk>0.1</Bulk>
+			<MarketValue>0.4</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Ammo10Gauge</li>
+		</thingCategories>
+		<cookOffProjectile>Bullet_10Gauge_BP_Buck</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base10GaugeBullet">
+		<defName>Bullet_10Gauge_BP_Buck</defName>
+		<label>blackpowder buckshot pellet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>78</speed>
+			<damageAmountBase>7</damageAmountBase>
+			<pelletCount>18</pelletCount>
+			<armorPenetrationSharp>3.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>3.4</armorPenetrationBlunt>
+			<spreadMult>9.4</spreadMult>
+			<casingMoteDefname>Fleck_ShotgunShell_Green</casingMoteDefname>
+			<casingFilthDefname>Filth_ShotgunAmmoCasings_Green</casingFilthDefname>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="BlackpowderRecipeBase">
+		<defName>MakeAmmo_10Gauge_BP_Buck</defName>
+		<label>make 10 gauge (BP Buck) shell x40</label>
+		<description>Cast and assemble 40 10 gauge (BP Buck) shells.</description>
+		<jobString>Casting and assembling 10 gauge (BP Buck) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_10Gauge_BP_Buck>40</Ammo_10Gauge_BP_Buck>
+		</products>
+		<workAmount>3400</workAmount>
+	</RecipeDef>
+</Defs>

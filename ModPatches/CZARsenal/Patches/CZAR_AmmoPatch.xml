@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
 						<ThingDef Class="CombatExtended.AmmoDef" ParentName="BPBuckBase">
@@ -64,7 +64,7 @@
 			</li>
 
 			<!-- turn 44 russian bp into actual 44 russ instead of being a 44 mag round-->
-			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ammo_44Russian_BP"]/thingCategories/li</xpath>
 				<value>
 					<li>Ammo44Russian</li>
@@ -72,7 +72,7 @@
 			</li>
 
 			<!-- create HV 44 russ from czar ammos -->
-			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
 				<value>
 					<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base44RussianBullet">
@@ -111,7 +111,7 @@
 			</li>
 
 			<!-- add the czar 44russian to 44mag bp compat guns -->
-			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_BPCompat"]/ammoTypes</xpath>
 				<value>
 					<Ammo_44Russian_FMJ>Bullet_44Russian_FMJ</Ammo_44Russian_FMJ>
@@ -119,7 +119,7 @@
 					<Ammo_44Russian_HP>Bullet_44Russian_HP</Ammo_44Russian_HP>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_HV_BPCompat"]/ammoTypes</xpath>
 				<value>
 					<Ammo_44Russian_FMJ>Bullet_44Russian_HV_FMJ</Ammo_44Russian_FMJ>
@@ -129,39 +129,39 @@
 			</li>
 
 			<!-- rename and retexture ammotypes to be more consistent with other ammo (makes it look nicer next to 44mag) -->
-			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ammo_44Russian_FMJ"]/label</xpath>
 				<value>
 					<label>.44 Russian (FMJ)</label>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ammo_44Russian_FMJ"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Ammo/Revolver/FMJ</texPath>
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ammo_44Russian_AP"]/label</xpath>
 				<value>
 					<label>.44 Russian (AP)</label>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ammo_44Russian_AP"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Ammo/Revolver/AP</texPath>
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ammo_44Russian_HP"]/label</xpath>
 				<value>
 					<label>.44 Russian (HP)</label>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace" MayRequire="CE.Kirp.RUGuns">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Ammo_44Russian_HP"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Ammo/Revolver/HP</texPath>

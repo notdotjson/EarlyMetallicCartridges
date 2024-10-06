@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_22LR_BPCompat</defName>
+		<label>.22 LR</label>
+		<ammoTypes>
+			<Ammo_22LR_BP>Bullet_22LR_BP</Ammo_22LR_BP>
+			<Ammo_22LR_FMJ>Bullet_22LR_FMJ</Ammo_22LR_FMJ>
+			<Ammo_22LR_AP>Bullet_22LR_AP</Ammo_22LR_AP>
+			<Ammo_22LR_HP>Bullet_22LR_HP</Ammo_22LR_HP>
+		</ammoTypes>
+		<similarTo>AmmoSet_Pistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BPPistolBase">
+		<defName>Ammo_22LR_BP</defName>
+		<label>.22 LR (BP)</label>
+		<description>The original blackpowder load of 22LR.</description>
+		<statBases>
+			<Mass>0.003</Mass>
+			<Bulk>0.01</Bulk>
+			<MarketValue>0.01</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Ammo22LR</li>
+		</thingCategories>
+		<cookOffProjectile>Bullet_22LR_BP</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- Set Spreadmult to 1.15 to match rifle cals as this cartridgetype not used in many pistols -->
+	<ThingDef ParentName="Base22LRBullet">
+		<defName>Bullet_22LR_BP</defName>
+		<label>.22 LR bullet (BP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>4.06</armorPenetrationBlunt>
+			<spreadMult>1.15</spreadMult>
+			<speed>89</speed>
+		</projectile>
+	</ThingDef>
+	
+	<RecipeDef ParentName="BlackpowderRecipeBase">
+		<defName>MakeAmmo_22LR_BP</defName>
+		<label>make .22 LR (BP) cartridge x100</label>
+		<description>Cast and assemble 100 .22 LR (BP) cartridges.</description>
+		<jobString>Casting and assembling .22 LR (BP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_22LR_BP>100</Ammo_22LR_BP>
+		</products>
+		<workAmount>1200</workAmount>
+	</RecipeDef>
+</Defs>

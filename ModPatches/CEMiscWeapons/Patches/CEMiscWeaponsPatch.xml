@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- Add a new non-BP compatible version of the .45-70 ammoset to prevent AR-CHR from loading BP -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<CombatExtended.AmmoSetDef>
+						<defName>AmmoSet_4570Gov_No_BP</defName>
+						<label>.45-70 Government</label>
+						<ammoTypes>
+							<Ammo_4570Gov_FMJ>Bullet_4570Gov_FMJ</Ammo_4570Gov_FMJ>
+							<Ammo_4570Gov_AP>Bullet_4570Gov_AP</Ammo_4570Gov_AP>
+							<Ammo_4570Gov_HP>Bullet_4570Gov_HP</Ammo_4570Gov_HP>
+							<Ammo_4570Gov_Incendiary>Bullet_4570Gov_Incendiary</Ammo_4570Gov_Incendiary>
+							<Ammo_4570Gov_HE>Bullet_4570Gov_HE</Ammo_4570Gov_HE>
+							<Ammo_4570Gov_Sabot>Bullet_4570Gov_Sabot</Ammo_4570Gov_Sabot>
+						</ammoTypes>
+						<similarTo>AmmoSet_Rifle</similarTo>
+					</CombatExtended.AmmoSetDef>
+				</value>
+			</li>
+			<!-- replace the AR-CHR ammoset with the non BP Compat version we created -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="CEPlus_cowboyAR"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_4570Gov_No_BP</ammoSet>
+				</value>
+			</li>
+
+			<!-- Add BP Compat ammosets to relevant weapons -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="CEPlus_doubleBarrel"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_12Gauge_BPCompat</ammoSet>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="CEPlus_SnakeCharmer"]/comps/li[1]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_410Bore_BPCompat</ammoSet>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- added support to validate whether firearm exists (for CZAR compatibility) -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="CEPlus_TozShotgun"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="CEPlus_TozShotgun"]/comps/li[1]/ammoSet</xpath>
+			<value>
+				<ammoSet>AmmoSet_20Gauge_BPCompat</ammoSet>
+			</value>
+		</match>
+	</Operation>
+</Patch>

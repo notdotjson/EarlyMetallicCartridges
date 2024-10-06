@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li IfModActive="Keshash.AmmoVarietyShotgun">ModPatches/AmmoVarietyShotguns</li>
+		<li IfModActive="Safair.ArmorPiercingSpecial">ModPatches/ArmorPiercingSpecial</li>
+		<li IfModActive="Kriptoner.MiscGuns2">ModPatches/CEMiscWeapons</li>
+		<li IfModActive="al9000.357simple">ModPatches/CESimple357</li>
+		<li IfModActive="CETeam.CombatExtendedArmory">ModPatches/CombatExtendedArmory</li>
+		<li IfModActive="CETeam.CombatExtendedGuns">ModPatches/CombatExtendedGuns</li>
+		<li IfModActive="CE.Kirp.RUGuns">ModPatches/CZARsenal</li>
+		<li IfModActive="killerbot.GTekV2Arsenal">ModPatches/GTekArsenal2</li>
+		<li IfModActive="CP.RimmuNation.2.Weapons">ModPatches/Rimmunation2</li>
+	</v1.5>
+</loadFolders>

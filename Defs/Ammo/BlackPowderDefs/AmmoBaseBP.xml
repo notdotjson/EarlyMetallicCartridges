@@ -12,6 +12,7 @@
 			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
 		</tradeTags>
 		<ammoClass>Blackpowder</ammoClass>
+		<stackLimit>5000</stackLimit>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="BPPistolBase" ParentName="BPBase" Abstract="True">
