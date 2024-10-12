@@ -11,6 +11,7 @@
 							<description>Transitional era blackpowder loading, used by those who could not afford better.</description>
 							<statBases>
 								<Mass>0.024</Mass>
+								<Bulk>0.03</Bulk>
 								<MarketValue>0.1</MarketValue>
 							</statBases>
 							<thingCategories>

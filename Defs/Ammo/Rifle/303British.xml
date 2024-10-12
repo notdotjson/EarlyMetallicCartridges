@@ -22,6 +22,7 @@
 		<description>Pre-smokeless era blackpowder loading originally created for early Lee-Metford rifles.</description>
 		<statBases>
 			<Mass>0.029</Mass>
+			<Bulk>0.03</Bulk>
 			<MarketValue>0.12</MarketValue>
 		</statBases>
 		<thingCategories>

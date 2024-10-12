@@ -18,8 +18,8 @@
 		<label>10 gauge shell (BP Buck)</label>
 		<description>Transitional era blackpowder loading, used by those who could not afford better.</description>
 		<statBases>
-			<Mass>0.1</Mass>
-			<Bulk>0.1</Bulk>
+			<Mass>0.09</Mass>
+			<Bulk>0.09</Bulk>
 			<MarketValue>0.4</MarketValue>
 		</statBases>
 		<thingCategories>

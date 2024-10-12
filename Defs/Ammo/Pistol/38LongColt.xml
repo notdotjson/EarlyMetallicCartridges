@@ -6,6 +6,7 @@
 		<description>Pre-smokeless era blackpowder cartridge which was later used to develop the smokeless 38 Special cartridge.</description>
 		<statBases>
 			<Mass>0.013</Mass>
+			<Bulk>0.01</Bulk>
 			<MarketValue>0.06</MarketValue>
 		</statBases>
 		<thingCategories>

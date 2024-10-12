@@ -38,6 +38,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>0.021</Mass>
+			<Bulk>0.02</Bulk>
 			<MarketValue>0.09</MarketValue>
 		</statBases>
 		<thingCategories>

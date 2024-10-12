@@ -7,6 +7,7 @@
 		<description>Pre-smokeless era blackpowder loading originally created for the Colt SAA revolver.</description>
 		<statBases>
 			<Mass>0.022</Mass>
+			<Bulk>0.02</Bulk>
 			<MarketValue>0.1</MarketValue>
 		</statBases>
 		<thingCategories>

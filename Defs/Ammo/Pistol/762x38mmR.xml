@@ -18,6 +18,7 @@
 		<description>Pre-smokeless era blackpowder loading originally created for early Nagant M1895 revolvers.</description>
 		<statBases>
 			<Mass>0.013</Mass>
+			<Bulk>0.01</Bulk>
 			<MarketValue>0.07</MarketValue>
 		</statBases>
 		<thingCategories>

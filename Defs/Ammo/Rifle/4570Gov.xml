@@ -6,6 +6,7 @@
 		<description>Pre-smokeless era blackpowder loading, with a much heavier bullet than modern smokeless loads.</description>
 		<statBases>
 			<Mass>0.05</Mass>
+			<Bulk>0.03</Bulk>
 			<MarketValue>0.2</MarketValue>
 		</statBases>
 		<thingCategories>
